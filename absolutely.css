@@ -1,3 +1,8 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	text-align : center;
 	font-family : Tahoma;
@@ -5,6 +10,7 @@ body {
 	background-color : black;
 	/* toe te voegen */
 }
+
 .all {
 	text-align : left;
 	width : 700px;
@@ -14,3 +20,156 @@ body {
 	border : 4px solid red;
 }
 
+main {
+	background-color: rgba(255,255,255,0.4);
+	padding: 5px;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+#humanfactor {
+	color: blue;
+	cursor: pointer;
+	position: relative;
+}
+
+#humanfactor #explination {
+	visibility: hidden;
+	width: 200px;
+	background-color: white;
+	color: black;
+	padding: 3px;
+	border: 3px solid blue;
+	border-radius: 10px;
+	
+	position: absolute;
+	z-index: 1;
+	top: 125%;
+	left: 75%;
+	margin-left: -60px;
+}
+
+#humanfactor:hover #explination{
+	visibility: visible;
+	opacity: 1;
+}
+
+nav {
+	background: url(bar1.png);
+	height: 25px;
+	color: grey;
+}
+
+nav:hover {
+	background: url(bar2.png);
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+nav ul li a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+#title {
+	position: relative;
+	bottom: 170px;
+	left: 20px;
+}
+
+#title:hover {
+	bottom: 165px;
+	left: 35px;
+}
+
+#saw {
+	position: relative;
+	right: 350px;
+	top: 30px;
+}
+
+#saw:hover {
+	right: 345px;
+	top: 35px;
+}
+
+#hammer {
+	position: relative;
+	bottom: 90px;
+}
+
+#hammer:hover {
+	bottom: 80px;
+	right: 5px;
+}
+
+#pincers {
+	position: relative;
+	left: 560px;
+}
+
+#pincers:hover {
+	left: 550px;
+}
+
+#screwdriver {
+	position: relative;
+	bottom: 150px;
+	left: 350px;
+}
+
+#screwdriver:hover {
+	bottom: 145px;
+	left: 340px;
+}
+
+
+
+#toolbox {
+	position: relative;
+	right: 170px;
+}
+
+#toolbox ul {
+	visibility: hidden;
+	width: 100px;
+	color: black;
+	
+	position: absolute;
+	z-index: 1;
+	left: 20%;
+	bottom: -50px;
+	margin-left: -60px;
+}
+
+#toolbox:hover ul{
+	visibility: visible;
+	opacity: 1;
+}
+
+#toolbox ul li {
+	border: 1px solid black;
+	padding: 5px;
+	background-color: white;
+	width: 100px;
+}
+
+#toolbox ul li:hover {
+	background-color: lightyellow;
+}
+
+#toolbox ul li a {
+	text-decoration: none;
+}
